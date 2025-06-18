@@ -48,4 +48,41 @@ The code uses the **Adafruit DHT sensor library** to read data from the DHT11 se
 - If the sensor fails to provide data, an error message is printed.
 - Otherwise, the readings are displayed on the Serial Monitor.
 
-### 🧪 Sample Output
+### 🧪 Sample Output:
+
+Reading from DHT11 Sensor...
+Temperature: 25.00 °C Humidity: 60.00 %
+Temperature: 25.10 °C Humidity: 59.00 %
+
+
+---
+
+## 🚀 How to Run
+
+### Using Arduino IDE
+1. Install the **DHT sensor library** (by Adafruit) via Library Manager.
+2. Connect your board and select the correct **board** and **COM port**.
+3. Upload the code and open the **Serial Monitor** at **9600 baud**.
+
+### Using PlatformIO
+1. Add the Adafruit DHT library to `platformio.ini`.
+2. Upload the code and open the Serial Monitor using:
+
+pio device monitor
+
+
+---
+
+## 📦 Repository Structure
+
+/DHT11_Serial_Display
+│
+├── DHT11_Sensor.ino # Main code file
+└── README.md # This file
+
+---
+
+## 🛠️ Author
+
+- 👤 Vishnujith A & Harshel Raj
+- 🎓 B.Tech Student Project
