@@ -46,3 +46,54 @@ This project allows you to control the built-in LED on a NodeMCU (ESP8266) throu
 ## License
 
 This project is open-source and free to use for educational and personal projects.
+
+---
+
+
+# NodeMCU LED Toggle Control via Web Interface
+
+This project lets you control the built-in LED of a NodeMCU (ESP8266) using a single toggle button on a webpage hosted by the device. The page also displays the current LED status.
+
+## Features
+
+- Hosted web server on the NodeMCU
+- One button to toggle the LED ON or OFF
+- Displays current LED status on the same page
+
+## Hardware Required
+
+- NodeMCU ESP8266 board
+- Micro USB cable
+- Wi-Fi access point
+
+## Software Required
+
+- Arduino IDE
+- ESP8266 board package
+
+## Setup Instructions
+
+1. Connect the NodeMCU to your PC using a USB cable.
+2. Open the Arduino IDE and install the ESP8266 board via the Board Manager.
+3. Select:
+   - Board: NodeMCU 1.0 (ESP-12E Module)
+   - Port: Your COM port
+4. Replace `YOUR_SSID` and `YOUR_PASSWORD` with your Wi-Fi credentials.
+5. Upload the code to your NodeMCU.
+
+## How to Use
+
+1. Open the Serial Monitor at 115200 baud after uploading.
+2. Note the IP address shown after Wi-Fi connection.
+3. Open the IP in your browser.
+4. Click the "Toggle LED" button to switch the LED ON/OFF.
+5. The status will update on the webpage.
+
+## Notes
+
+- The built-in LED is usually connected to GPIO2.
+- It is **active LOW** — setting the pin to `LOW` turns it ON.
+
+## License
+
+Free to use for personal and educational projects.
