@@ -73,6 +73,7 @@ pio device monitor
 
 ---
 
+
 ## 📦 Repository Structure
 
 /DHT11_Serial_Display
@@ -81,6 +82,25 @@ pio device monitor
 └── README.md # This file
 
 ---
+
+# DHT11 Sensor Code Improvements
+
+## ✅ Overview
+This project reads temperature and humidity data from a DHT11 sensor using an Arduino-compatible board and prints the values to the Serial Monitor.
+
+## 🔧 Improvements Made
+- **Warning Suppression:** Warnings for abnormal temperature (> 40°C) or humidity (< 20%) are displayed only once per condition to avoid repetition.
+- **Loop Interruption:** The `loop()` is halted immediately after a warning to prevent printing sensor data when conditions are unsafe.
+- **No Emoji Output:** All console messages are kept clean and hardware-friendly (no special characters).
+- **Flag Logic:** Implemented boolean flags to track the state of warnings and control message output effectively.
+
+## 📌 Conditions Handled
+- **Temperature > 40°C** → Warning shown once.
+- **Humidity < 20%** → Warning shown once.
+- Normal conditions → Sensor readings printed.
+
+---
+
 
 ## 🛠️ Author
 
