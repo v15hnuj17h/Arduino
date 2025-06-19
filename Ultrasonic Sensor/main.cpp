@@ -10,17 +10,20 @@ void setup(){
 }
 
 void loop(){
+  float dist = distance(TRIGPIN,ECHOPIN);
+  Serial.print("Distance: ");
+  Serial.print(dist);
+  Serial.println(" cm");
+
+  delay(500);
+}
+
+float distance(int TRIGPIN, int ECHOPIN){
   digitalWrite(TRIGPIN, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIGPIN, LOW);
   delayMicroseconds(2);
-
   float duration = pulseIn(ECHOPIN, HIGH);
   float distance = (duration * 0.034) / 2;
-
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm");
-
-  delay(500);
+  return distance;
 }
