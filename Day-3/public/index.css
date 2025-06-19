@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-image: url(media/panther.png);
+    background-size: cover; */
+    background-color: black;
+    color: grey;
+}
+h1{
+    text-align: center;
+    padding: 80px 20px;
+    margin: 50px;
+    border-radius: 50px;
+    box-shadow: -50px 0px 100px red,50px 0px 100px blue;
+    /* background-color: gray; */
+}
+h1:hover{
+    color: white;
+    cursor: pointer;
+}
