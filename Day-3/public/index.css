@@ -20,3 +20,22 @@ h1:hover{
     color: white;
     cursor: pointer;
 }
+#parant{
+    display: flex;
+    justify-content: center;
+    /* background-color: cyan; */
+}
+#thingspakdata{
+    width: 30%;
+    text-align: center;
+    padding: 100px 50px;
+    font-size: 40px;
+    box-shadow: -50px 0px 100px red,50px 0px 100px blue;
+    border-radius: 50px;
+    margin: 20px;
+    /* background-color: red; */
+}
+#thingspakdata:hover{
+    color: white;
+    cursor: pointer;
+}
